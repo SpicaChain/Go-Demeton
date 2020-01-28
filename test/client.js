@@ -25,7 +25,7 @@ client.on('close', function () {
 });
 
 function sendBlock(conf) {
-    shell.exec('./neb ...' + conf, function (code, stdout, stderr) {
+    shell.exec('./deb ...' + conf, function (code, stdout, stderr) {
         var block = new Buffer(stdout, 'base64');
         console.log(block.toString());
         client.write(block);
@@ -33,7 +33,7 @@ function sendBlock(conf) {
 }
 
 function sendTx(conf) {
-    shell.exec('./neb ...' + conf, function (code, stdout, stderr) {
+    shell.exec('./deb ...' + conf, function (code, stdout, stderr) {
         var block = new Buffer(stdout, 'base64');
         console.log(block.toString());
         client.write(block);
@@ -41,7 +41,7 @@ function sendTx(conf) {
 }
 
 function downloadBlock(conf) {
-    shell.exec('./neb ...' + conf, function (code, stdout, stderr) {
+    shell.exec('./deb ...' + conf, function (code, stdout, stderr) {
         var block = new Buffer(stdout, 'base64');
         console.log(block.toString());
         client.write(block);
