@@ -2,7 +2,7 @@
 
 var HttpRequest = require("../../node-request");
 var Wallet = require('../../../cmd/console/deb.js/lib/wallet.js');
-var deb = new Wallet.Neb(new HttpRequest("http://127.0.0.1:8685"));
+var deb = new Wallet.Deb(new HttpRequest("http://127.0.0.1:8685"));
 
 
 var sleep = require("system-sleep");

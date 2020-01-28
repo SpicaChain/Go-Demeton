@@ -28,8 +28,8 @@ if (AddressNumber <= 0 || SendTimes <= 0) {
     return;
 }
 
-var Neb = Wallet.Neb;
-var deb = new Neb();
+var Deb = Wallet.Deb;
+var deb = new Deb();
 
 var ChainID;
 var from;

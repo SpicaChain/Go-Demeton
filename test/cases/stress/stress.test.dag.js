@@ -14,8 +14,8 @@ var EachAccountSendTimes = 50;
 var args = process.argv.splice(2);
 env = args[0];
 
-var Neb = Wallet.Neb;
-var deb = new Neb();
+var Deb = Wallet.Deb;
+var deb = new Deb();
 
 var ChainID;
 var from;
